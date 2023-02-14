@@ -12,6 +12,10 @@ def index():
     except:
         return render_template('error.html')
 
+@app.route("/hello")
+def inde():
+    return "ho gya"
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8080)
